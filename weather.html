@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <script type="module" src="./weather/appeather.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="container-fluid bg-warning p-2">
+      <div class="container">
+        <div class="row">
+          <div class="logo col-auto text-light">
+            <h2>Weather monkeys</h2>
+          </div>
+          <div class="d-flex col-md-4">
+            <input
+              id="id_input"
+              placeholder="search for town weather..."
+              type="search"
+              class="form-control"
+            />
+            <button id="search_btn" class="btn btn-dark">Search</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main class="container text-center pt-5">
+      <h2>Info about: <span id="id_town"></span></h2>
+      <img id="id_img" src="" alt="icon" width="150" />
+      <h3>Condition: <span id="id_condition"></span></h3>
+      <h4>Temp: <span id="id_temp"></span> C</h4>
+      <h4>Wind: <span id="id_wind"></span> Kmh</h4>
+    </main>
+  </body>
+</html>
